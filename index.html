@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Html</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #e0f7e0;
+        }
+
+        /* Custom background elements */
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.4;
+        }
+
+        .circle-1 {
+            top: 10%;
+            left: 20%;
+            width: 200px;
+            height: 200px;
+            background-color: #4caf50;
+        }
+
+        .circle-2 {
+            bottom: 10%;
+            right: 15%;
+            width: 150px;
+            height: 150px;
+            background-color: #388e3c;
+        }
+    </style>
+</head>
+<body class="h-screen flex justify-center items-center">
+
+    <!-- Background elements (circles) -->
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+
+    <!-- Greeting Card -->
+    <div class="bg-white p-10 rounded-xl shadow-lg text-center transform transition-transform hover:scale-105">
+        <h1 class="text-4xl text-green-800 font-bold mb-4">Hello, Welcome to my Website!</h1>
+        <p class="text-lg text-green-600 mb-6">I am Glad to have you here</p>
+        <a href="#" class="bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-lg transition-colors">Learn More</a>
+    </div>
+    
+</body>
+</html>
